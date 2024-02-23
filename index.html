@@ -2,1199 +2,622 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>Mauro Binda</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <main>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+      <div class="profile">
+        <img src="assets/img/profilo.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mauro Binda</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/mauro-binda-3b916b61" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/mauro-binda-3b916b61" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mauro-binda-3b916b61" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
       </div>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Contatto</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
         </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+      </nav><!-- .nav-menu -->
     </div>
+  </header><!-- End Header -->
 
-  </main>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Mauro Binda</h1>
+      <p>Sono un <span class="typed" data-typed-items="Medico, Radiologo, Ozonoterapeuta"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contatto</h2>
+          <p> </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profilo.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Medico Chirurgo Specialista in Radiodiagnostica</h3>
+            <p class="fst-italic">
+              Dr. Med. Mauro Binda,
+              Nato a Erba, provincia di Como (CO) il 17.01.1955 
+              Medico Chirurgo Specialista in Radiodiagnostica,
+              presso Università degli Studi di Pavia, Laurea in Medicina e Chirurgia
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>17.01.1955</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://polimedica.ch" target="_blank">polimedica.ch</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Telefono:</strong> <span><a href="tel:+41 78 837 67 28" target="_blank">+41 78 837 67 28</a></span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Laurea:</strong> <span>Medicina e Chirurgia</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span><a href="mailto:dottorbinda@gmail.com" target="_blank">dottorbinda@gmail.com</a></span></li>
+                  <li></li><i class="bi bi-chevron-right"></i> <strong>Indirizzo:</strong> <span><a href="https://www.google.com/maps/place/Via+Monte+Generoso,+2,+Coldrerio,+Switzerland" target="_blank">Coldrerio, CH</a></span></ul></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+             
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts section-bg">
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Ozonoterapia</h2>
+          <div style="display: flex; align-items: center;">
+            <img src="assets/img/ozono.jpg" alt="Immagine" style="width: 300px;">
+            <p style="margin-left: 20px;">OSSIGENO OZONO TERAPIA TICINO<br>
+              <br>
+              Attività antinfiammatoria e antidolorifica con produzione, nei tessuti trattati, di sostanze
+  come le prostaglandine che bloccano il dolore e sostanze antiossidanti per la
+  rigenerazione dei tessuti. Miglioramento della microcircolazione e
+  dell'ossigenazione con effetto antiossidante
+  nei tessuti trattati.
+  Attività diretta antibatterica, antivirale e antifungina.
+  L'efficacia terapeutica è pari a circa 80-90%
+  nella maggior parte dei casi trattati.
+  </p> 
+</div>  
+<p>
+
+            <br>Via Monte Generoso, 2<br>
+            Coldrerio (CH), Ticino - Svizzera 
+            <br>
+            <br><i class="bi bi-chevron-right"></i> <strong>Indicazioni:</strong> <span><a href="https://www.google.com/maps/place/Via+Monte+Generoso,+2,+Coldrerio,+Switzerland" target="_blank">Google Maps</a></span>
+            <br><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://ozonoterapiaticino.ch" target="_blank">ozonoterapiaticino.ch</a></span>
+            <br><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span><a href="mailto:info@ozonoterapiaticino.ch" target="_blank">info@ozonoterapiaticino.ch</a></span>
+            <br><i class="bi bi-chevron-right"></i> <strong>Telefono:</strong> <span><a href="tel:+41 78 837 67 28" target="_blank">+41 78 837 67 28</a></span>
+        </p>    
+        <br><br>    
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Clienti felici</strong> Dopo il trattamento</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>In lista</strong> Pazienti in lista</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Chiamate</strong> Richieste ricevute</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Staff</strong> Medico a disposizione</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Dr. Med. Mauro Binda, Nato a Erba, provincia di Como (CO) il 17.01.1955 Medico Chirurgo Specialista in Radiodiagnostica, presso Università degli Studi di Pavia, Laurea in Medicina e Chirurgia</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">STUDI, FORMAZIONE ED ESPERIENZE PROFESSIONALI</h3>
+            <div class="resume-item">
+              <ul>
+                <li><strong>Dal marzo 2015</strong> membro della Società Italiana di Ultrasonologia in Medicina e Biologia.</li>
+                <li><strong>Dal 2013</strong> membro della Società di Ultrasonologia medica della Svizzera Italiana.</li>
+                <li><strong>Dal 2013</strong> Autorizzazione al libero esercizio nel Cantone Ticino (22 febbraio 2013).</li>
+                <li><strong>Dal Dicembre 2012</strong> iscritto all'Ordine dei Medici del Canton Ticino.</li>
+                <li><strong>Dal 2011</strong> membro della Società di Radiologia della Svizzera Italiana.</li>
+                <li><strong>Dal settembre 2010 all’agosto 2014</strong> consulente di radiodiagnostica presso Ente Ospedaliero Cantonale Ticino - Mendrisio (Svizzera).</li>
+                <li><strong>Dal 2010</strong> riconoscimento in Svizzera dei diplomi di Laurea in medicina e chirurgia e di Specialista in radiologia diagnostica.</li>
+                <li><strong>Dal 2001 al 2013</strong> Responsabile del Servizio di Risonanza Magnetica di Alliance Medical di Bregnano (Co).</li>
+                <li><strong>Dal 01.04.2001 ad oggi</strong> rapporto di lavoro di tipo libero professionale presso Istituti Clinici Privati accreditati e convenzionati con il Sistema sanitario nazionale italiano svolgendo attività di radiodiagnostica in radiologia tradizionale, senologia, ecografia generale, tomografia computerizzata, risonanza magnetica neurologia, body, muscoloscheletrica.</li>
+                <li><strong>Dall' 01.01.1995 al 31.03.2001</strong>, Como, presso il servizio di radiologia diagnostica del presidio ospedaliero S. Anna dell' Azienda Ospedaliera Sant'Anna della Regione Lombardia, servizio di primo livello dirigenziale del ruolo sanitario nazionale.</li>
+                <li><strong>1991-1994</strong>, Como, presso il presidio ospedaliero S. Anna, aiuto di radiologia diagnostica, di ruolo, con rapporto di lavoro a tempo pieno.</li>
+                <li><strong>1991</strong>, Como, presso il presidio ospedaliero S.Anna, aiuto corresponsabile di radiologia diagnostica, incaricato, con rapporto di lavoro a tempo pieno.</li>
+                <li><strong>1987-91</strong>, Como, presso il presidio ospedaliero S. Anna, assistente medico di radiologia diagnostica, di ruolo, con rapporto di lavoro a tempo pieno.</li>
+                <li><strong>1985-87</strong>, Como, presso il presidio ospedaliero S. Anna, assistente medico di radiologia diagnostica, incaricato, con rapporto di lavoro a tempo pieno.</li>
+                <li><strong>13.07.1984</strong>, Università degli Studi di Pavia, diploma di specializzazione in Radiologia diagnostica, con punti 44/50, con attestato di frequenza obbligatoria dal 01.01.1981 al 30.09.1982.</li>
+                <li><strong>Dall' 01.08.82 al 30.06.85</strong>, Lecco, servizio di Associato della medicina generale presso l'U.S.S.L. n.16.</li>
+                <li><strong>Dall' 01.02.82 al 08.09.82</strong>, Erba (Co), servizio di guardia medica presso l' U.S.S.L. n.15.</li>
+                <li><strong>Dall' 01.04.81 al 02.04.82</strong>, Pavia, Tirocinio pratico ospedaliero presso l'Istituto di Radiologia dell'Ospedale generale regionale di Pavia con giudizio complessivo di "ottimo".</li>
+                <li><strong>Novembre 1980</strong>, Università degli Studi di Pavia, esame di stato ed abilitazione all'esercizio della professione di medico chirurgo.</li>
+                <li><strong>19.09.1980</strong>, Università degli Studi di Pavia, Laurea in Medicina e Chirurgia con punti 107/110.</li>
+              </ul>
+            </div>
 
 
+<h3 class="resume-title">ATTIVITA' DI AGGIORNAMENTO SCIENTIFICO</h3>
+<div class="resume-item">
+  <ul>
+<li>262) 2023, Risonanza Magnetica e radioprotezione ai sensi del DM 14.01.2021 e d Lgs 101/2020 /(2 crediti ECM)</li>
+<li>262) 2023, Risonanza Magnetica e radioprotezione ai sensi del DM 14.01.2021 e d Lgs 101/2020 /(2 crediti ECM)</li>
+<li>261) 2023, Corso teorico-pratico di ossigeno ozonoterapia SIOOT(n.9.5 crediti ECM)</li>
+<li>260) 2023, Artrosi: il PRP come alternativa terapeutica (n.3 crediti ECM)</li>
+<li>259) 2023, Le tecniche infiltrative nella spalla (n.3 crediti ECM)</li>
+<li>258) 2023, Eco-Fast: nozioni di base e applicazioni in emergenza e urgenza (n.6 crediti ECM)</li>
+<li>257) 2023, Corso di aggiornamento “Rachialgia, imaging e terapia) Bergamo</li>
+<li>256) 2022, Corso ossigeno Ozono Terapia in Medicina Estetica; Bergamo</li>
+<li>255) 2022, Corso teorico pratico avanzato di ecocolor doppler vascolare; Venezia (11.5 crediti ECM)</li>
+<li>254) 2022, Corso di aggiornamento: Radiologia, formazione per l’aggiornamento quinquennale. OMCT, Cantone Ticino, CH (4 crediti)</li>
+<li>253) 2022, “Le infezioni del paziente diabetico“ (27 crediti ECM)</li>
+<li>252) 2022, Corso teorico pratico di Ossigeno Ozono terapia; Università di Pavia</li>
+<li>251) 2022, Coro di Infiltrazioni della colonna (20 crediti ECM) Milano</li>
+<li>250) 2022, Corso teorico pratico di Ossigeno Ozono terapia.(8,30 crediti ECM); Università di Pavia</li>
+<li>249) 2021, Corso: Imaging in riabilitazione; Milano (20 crediti ECM)</li>
+<li>248) 2021, Formazione in radioprotezione: mezzi di protezione individuali in radiologia diagnostica e interventistica (1 credito ECM)</li>
+<li>247) 2021, Evento formativo: Tutto sulla tiroide. Fisiopatologia, clinica, diagnostica e terapia (9 crediti formativi ECM)</li>
+<li>246) 2021, Corso teorico pratico di eco color doppler vascolare con metodo tutoriale diretto, Università degli studi di Milano (17 crediti ECM)</li>
+<li>245) 2021, Corso di aggiornamento in Radiologia “Protezione e calcolo del rischio dalle radiazioni RNI e RI” presso Ordine dei Medici del Canton Ticino - CH; 4 crediti ECM​</li>
+<li>242) 2020, Evento formativo: Formazione dei lavoratori sui rischi specifici da radiazioni ionizzanti e campi elettromagnetici. ( 4 crediti formativi E.C.M.)</li>
+<li>241) 2020, Evento formativo; Le tendinopatie:dalla etiopatogenesi al trattamento. Dynamicon education (15 crediti E.C.M.)</li>
+<li>240) 2020, Evento formativo: Ecografia muscoloscheletrica SIUMB ( 6 crediti formativi E.C.M.)</li>
+<li>239) 2020, Evento formativo: Abilità di counseling in ambito sanitario ( 10 crediti formativi E.C.M.)</li>
+<li>238) 2020, Aggiornamento ecografico:miscellanea; SIUMB ( 11crediti formativi E.C.M.)</li>
+<li>237) 2020, Aggiornamento ecografico: ADDOME; SIUMB ( 9 crediti formativi E.C.M.)</li>
+<li>236) 2020, Corso d’aggiornamento “Come aprire il tuo ambulatorio; ; Milano ( 8 crediti E.C.M.)</li>
+<li>235) 2020, Corso d’aggiornamento “ Radiologia: Radon, un problema di salute” . (3 crediti SGR-SSR, Radiologia CH).</li>
+<li>234) 2020, Corso “ L’imaging in pelvi-perineologia “. ( 8 crediti E.C.M.)</li>
+<li>233) 2019, Corso di Ecografia muscolo-scheletrica e articolare ( 24 crediti E.C.M.), Milano</li>
+<li>232) 2019, Corso teorico pratico di Ossigeno Ozono terapia di 1 livello; Società Scientifica di Ossigeno Ozono Terapia, Gorle (BG). ( 6.5 crediti E.C.M.)</li>
+<li>231) 2019, Corso “La spalla instabile post traumatica “ , Modena</li>
+<li>230) 2019,Musculoskeletal MRI meeting 2019. Lugano ( 6 crediti CH)</li>
+<li>229) 2019, Congresso nazionale della sezione di Radiologia muscoloscheletrica .Catania (4.2 crediti ECM)</li>
+<li>228) 2019, Corso ecografia dei nervi periferici. Catania (2.8 crediti ECM)</li>
+<li>227) 2019, Corso “ Lesioni muscolari e tendinee nello sportivo: valutazione, riabilitazione e ritorno in campo”. Milano (16 crediti formativi ECM)</li>
+<li>226) 2019, Corso formativo “ La traumatologia dell’arto inferiore negli sport invernali”; Riva del Garda ( 5.6 crediti formativi ECM)</li>
+<li>225) 2018, Evento formativo: Doppler:le basi teoriche e l’ottimizzazione dell’ecografo ( & crediti formativi E.C.M.)</li>
+<li>224) 2018, Corso di ecografia andrologica ( 8 crediti formativi E.C.M.)</li>
+<li>223) 2018, Società di Radiologia Medica della Svizzera Italiana,formazione annuale di Radiologia: Radioprotezione in gravidanza   e Radioprotezione in TAC</li>
+<li>222) 2018,XIV Congresso della società italiana di onde d’urto e Corso teorico pratico terapia con onde d’urto, ( 3,5 crediti ECM) Parma</li>
+<li>221) 2018, Simposio di ecografia cardiovascolare della Società Ultrasonologia Medica Svizzera Italiana ( 2 ore SGUM)</li>
+<li>220) 2018,Muscol-skeletal MRI  meeting 2018: Knee MRI, Lugano CH</li>
+<li>219) 2018,Corso formazione di base in : ONDE D’URTO, Mestre (VE)</li>
+<li>218) 2018, Attestato di qualifica per eseguire l’applicazione  della TERAPIA EXTRACORPOREA AD ONDE D’URTO FOCALIZZATE.</li>
+<li>217) 2018,Resnick Course XI MRI Course. Update on the knee, schoulder , elbow and wrist</li>
+<li>216)  2018,  Evento formativo a distanza “Corso di ecografia della patologia endocrina del collo” ( 18 crediti formativi ECM)</li>
+<li>215) 2018, Evento formativo a distanza“Ecografia muscolo-scheletrica”, della Società Italiana di Ultrasonologia in medicina e biologia (  6 crediti formativi E C M)</li>
+<li>214) 2017, Corso residenziale di quattro giornate introduttivo di ecografia dinamica dei</li>
+<li>muscoli della testa e collo dell’apparato masticatorio, Brescia.</li>
+<li>213) 2017, Simposio autunnale della sezione della società svizzera di ultrasuonologia medica: aspetti ecografici dell’ernia inguinale e approccio ecografico all’arto inferiore.</li>
+<li>212) 2017, incontro formativo “vitamina D, aspetti teorici consigli pratici “. Mendrisio.</li>
+<li>211) 2017, incontro formativo “le più frequenti patologie della spalla, valutazione clinica e pratica”Mendrisio.</li>
+<li>210) 2017, Corso residenziale: ecografia muscolo-scheletrica e articolare Milano (24 crediti formativi E. C.M.)</li>
+<li>209) 2017, evento formativo: Radioprotezione in radiodiagnostica specialistica (otto crediti formativi E. C. M.)</li>
+<li>207) 2017, Musculoskeletal MRI meeting :Spine MRI, Lugano (6 crediti E.C.M.)</li>
+<li>​​206) 2017, Evento formativo a distanza “ Ecografia nefrologica 3: l’ecografia nefrologica-internistica di II° livello ( 6 crediti formativi E.C.M.)</li>
+<li>205) 2017, Corso residenziale di Ecografia muscoloscheletrica; Savona (10 crediti formativi E.C.M.)</li>
+<li>204) 2017, Evento formativo  a distanza  “ Trattamenti del nodulo tiroideo benigno”. ( 4 crediti formativi ECM)</li>
+<li>203) 2017, Corso esperienzale “I blocchi emotivi: dinamiche positive negative”.(24 crediti formativi ECM)</li>
+<li>202) 2017, Evento formativo  a distanza  di Ecografia Nefrologica 2: le nefropatie mediche  e chirurgiche acute e croniche( 5 crediti ECM)</li>
+<li>201) 2017, Evento formativo a distanza  di Ecografia Nefrologica 1: le basi metodologiche e le tecniche di indagine ( 5 crediti ECM)</li>
+<li>200) 2016, Corso intensivo di ecografia addominale “TUTTO ADDOME 2016”;Arezzo (24 crediti formativi E.C.M.)</li>
+<li>199) 2016, Resnick Course X MRI of the joints, Milano</li>
+<li>198) 2016, Corso teorico pratico  di interventistica muscolo-scheletrica ecoguidata”. Clinica Ortopedica Sapienza Università di Roma.(18 crediti E.C.M.)</li>
+<li>197) 2016, Evento Formativo FAD "Svllabus; procedure interventistiche ecoguidato-addome" (12 credi formativi E.C.M)</li>
+<li>196) 2016, Musculoskeletal MRI meeting : Shoulder MRI ( 8 crediti Swiss Society of Radiology SGR-SSR)</li>
+<li>195)2016,Evento come relatore di aggiornamento di Primavera: Ecografia dell’apparato muscoloscheletrico.(6 ore di aggiornamento della SUMSI/SGUM )</li>
+<li>194) 2016, Evento formativo : “Ortopedia: la tecnica percutanea microinvasiva  della chirurgia dell’alluce valgo (STIMEG Q-label e SSMI – 1 ora/punto)</li>
+<li>193) 2016, Evento residenziale:” A spasso con la mia ombra” Torino (23 crediti formativi E.C.M.)</li>
+<li>192) 2016, Evento formativo FAD “Urgenze cranio-spinali” (4 crediti formativi E.C.M.)</li>
+<li>191) 2016, Evento formativo FAD “Aggiornamento ecografico :miscellanea” (11 crediti formativi E.C.M.)</li>
+<li>190) 2016, Evento formativo FAD “Procedure interventistiche ecoguidate” (10 crediti formativi E.C.M.)</li>
+<li>189) 2016, Evento formativo FAD “Le focalità parenchimali in pediatria” (3 crediti formativi E.C.M.)</li>
+<li>188) 2016, Evento formativo FAD “Trauma tour attraverso i segni di base” (3 crediti formativi E.C.M.)</li>
+<li>187) 2016, Evento formativo FAD “Tomosintesi  e ricostruzione 2D” (3 crediti formativi E.C.M.)</li>
+<li>186) 2016,Evento formativo FAD “Syllabus:procedure interventistiche ecoguidate-collo e torace (6 crediti formativi E.C.M.)</li>
+<li>185) 2016, Corso “ La TC cone beam nello studio delle arcate dentarie” ,Peschiera  del Garda (6 crediti E.C.M.)</li>
+<li>184) 2015,Incontro formativo “Tecniche infiltrative microinvasive con medical device  e farmaci low dose nella patologia dolorosa osteoarticolare, Milano.</li>
+<li>183) 2015, Simposio autunnale  e assemblea annuale Società di Ultrasonologia medica della Svizzera Italiana(5 crediti SUMSI)</li>
+<li>182) 2015, “Aggiornamento ecografico: “miscellanea” della società Italiana di Ultrasonologia in Medicine e Biologia (11 crediti E.C.M.).</li>
+<li>181) 2015,”Corso di Aggiornamento Ecografico: Addome” della Società Italiana di Ultrasonologia in Medicina e Biologia (9 crediti ECM)</li>
+<li>180) 2015, Congresso nazionale  della sezione  di radiologia Muscoloscheletrica della SIRM. Genova (2.4crediti E.C.M.)</li>
+<li>179) 2015, Corso di refertazione RM del ginocchio.Genova (6 crediti E.C.M.)</li>
+<li>178) 2015, Corso di Ecografia Tecnica, anatomia ecografica e patologia della caviglia. Genova (6 crediti EC.M.)</li>
+<li>177) 2015, Percorso formativo conforme alle Linee Guida Internazionali ERC 2010 “BLSD adulto e pedia_ trico.Milano (20crediti E.C.M.)</li>
+<li>176) 2015, Corso  Musculoskeletal MRI meeting 2015:foot and ankle MRI; Lugano (6 crediti)</li>
+<li>175) 2014, Corso teorico pratico di ECOCOLOR DOPPLER  DEI T.S.A.; Ferrara.( 9 crediti E.C.M.)</li>
+<li>174) 2014, Resnick Course IX : MRI of the joints, Milano (4 crediti ECM)</li>
+<li>173) 2014, Corso “ addome e …approccio multidiagnostico e prospettive”, Genova  6(sei) crediti formativi</li>
+<li>172) 2014, Corso di formazione “LINEE GUIDA PER L’UTLIZZO DELLE MEDICINE COMPLEMENTARI (OMEOPATIA E OMOTOSSICOLOGIA)PER VIA SOTTOCUTANEA” a Milano 1 febbraio-13 aprile 2014.</li>
+<li>29 (ventinove) crediti formativi</li>
+<li>171) 2014, Aggiornamento:Muscoloskeletal MR meeting in Lugano: Hand and Wrist MRI (ECM 6 Crediti)</li>
+<li>170) 2014, Aggiornamento: il nodulo tiroideo: up-to-date e controversie diagnostiche.Ospedale Regionale di Lugano</li>
+<li>169) 2013, aggiornamento “Diabete : novità”;Circolo medico del Mendrisiotto(STIMEG Q-label e SSMI per 1ora/punto</li>
+<li>168) 2013,”Aggiornamento  in Neuroradiologia Diagnostica” Ospedale San Raffaele, Milano </li>
+<li>167) 2013 Aggiornamento  della Società di ultrasonologia della Svizzera Italiana “Immagini ecografiche  dell’arteriopatia diabetica  e precisazioni diagnostiche”(SGUM 2ORE_AMITI 2 ORE)</li>
+<li>166) 2013, formazione continua della Società di Radiologia della Svizzera Italiana “ RM mammaria  con mezzo di contrasto: lo stato dell’arte.( 1 punto SGR-SSR)</li>
+<li>165) 2013,Corso di Formazione ABCD…Ecografia della Società di ultrasonologia medica della Svizzera Italiana(4 punti SGUM)</li>
+<li>164) 2013, Corso di aggiornamento “Il pediatra e il radiologo pediatra”; Brescia (12,5 crediti formativi ECM)</li>
+<li>163) 2013,evento formativo"l'essenziale in neuroradiologia" (6 crediti formativi ECM)</li>
+<li>162) 2012, Corso" Trasformiamo la conoscenza in salute: le nuove frontiere della RMN" Alessandria(5crediti ECM)</li>
+<li>161) 2012, 7* Convegno, I giovani radiologi lombardo  a confronto con i Maestri, Milano( 12,5 crediti ECM)</li>
+<li>160) 2012, Incontro formativo " Radiologia Pediatrica"; Ente Ospedaliero Cantonale Bellinzona </li>
+<li>159) 2012, incontro formativo di Radiologia " DEFECO RM " Ente Ospedaliero Cantonale-Mendrisio</li>
+<li>158) 2012, 45° Congresso Nazionale Società Italiana Radiologia Medica, Torino (2 crediti ECM)</li>
+<li>157) 2012,Corso FAD. Bended "Audit Clinico" Federazione Nazionale Ordine Medici Chirurghi e Odontoiatri (12 crediti ECM)</li>
+<li>156) 2012, Corso evento FAD " Osteoporosi e Bifosfonati: stato dell'arte" , Provider Sympos(ia srl Roma ( 15 crediti ECM )</li>
+<li>155) 2012, Corso di aggiornamento professionale in senologia, sezione di studio di Senologia - Gruppo regionale Lombardia SIRM, Como</li>
+<li>154) 2012, Corso evento FAD " imaging radiologico del Rachide " Provider ASSFER (15 crediti ECM)</li>
+<li>153)2012, Evento formativo FAD Radiologia Tortacica HRTC , provider SIRM (8 crediti ECM)</li>
+<li>152) 2011 Corso " Refertazine TC alta risoluzione delle malattie polmonari"  Pavia (8 crediti ECM)</li>
+<li>151)2011 Corso " La risonanza Magnetica mammaria: indicazioni e  problematiche " , Pavia ( 7 crediti formativi)</li>
+<li>150) 2011 Corso " Principi di radioprotezione Legge 187/2000: 2 livello- area Radiodiagnostica ( 9 crediti formativi) </li>
+<li>149) 2011 Evento formativo n.592  “ Nuove acquisizioni sulla sicurezza sul lavoro negli ambienti sanitari” ( 9 crediti formativi)</li>
+<li>148) 2011 Evento formativo n. 1418 “ PROBLEM SOLVING” ( 20 crediti formativi)</li>
+<li>147) 2011, Evento formativo n. 1586 denominato INDAGINI ECOGRAFICHEIN MUSCOLO-SCHELETRICA ENTRY LEVEL MANUALE DI TECNICA E ANATOMIA ECOGRAFICA DELLE ARTICOLAZIONI (20 crediti formativi ECM)</li>
+<li>146) 2011, Congresso Nazionale sezione radiologia muscoloscheletrica SIRM , Varese (crediti 3 ECM )</li>
+<li>145) 2010,Corso "I giovani radiologi lombardi a confronto con i maestri* Milano ( crediti </li>
+<li>        ECM in attribuzione)  </li>
+<li>144) 2010, Corso Anatomia e tecnica TC e RM del distretto  capo-collo; Torino ( 7 crediti formativi)</li>
+<li>143) 2010, Congreso Nazionale SIRM; Verona ( crediti ECM  18 )</li>
+<li>142) 2010, Corso “ La gestione del paziente vascolare  con Risonanza Magnetica; Milano( crediti ECM 7)</li>
+<li>141) 2009, Corso base: Nuove metodiche di imaging dell’intestino .Fondazione I.R.C.C.S. Policlinico S. Matteo Pavia ( 4 crediti formativi ECM)</li>
+<li>140) 2009, Corso di aggiornamento “ La vertigine: inquadramento clinico-diagnostico” Azienda ospedaliera S. Anna –Como (5 crediti formatici ECM)</li>
+<li>139) 2009, Corso teorico pratico “La refertazione della colonna vertebrale per il radiologo generale” Fondazione I.R.C.C.S. Policlinico S. Matteo Pavia ( 8 crediti formativi ECM)</li>
+<li>138) 2009,Corso teorico pratico “Clinica  ed Imaging dele arterie renali” ; Fondazione I.R.C.C.S. Policlinico S. Matteo Pavia ( 8 crediti formativi ECM)</li>
+<li>137) 2009,Corso di Risonanza Magnetica Prostatica; Istituto di Ricerca e la Cura del cancro di Candiolo (10 crediti formativi ECM)</li>
+<li>136) 2009, Congresso Nazionale Sezione Radiologia Muscoloscheletrica della SIRM; Genova ( 5 crediti ECM)</li>
+<li>135) 2009, Evento formativo “ Banche dati biomediche: come strutturare una ricerca bibliografica “ organizzato da azienda ospedaliera  Sant’Anna di Como  ( 8 crediti formativi ECM)</li>
+<li>134) 2009, Convegno “ I tumori in provincia di Como “ organizzato da Azienda Ospedaliera Sant’Anna di Como (4,5 crediti formativi ECM)</li>
+<li>133) 2009, Convegno “ Le neoplasie in situ della mammella” organizzato da Fondazione I.R.C.C.S.Policlinico san Matteo; Pavia ( 8 crediti formativi E.C.M.)</li>
+<li>132) 2007, Corso itinerante  di Mammografia digitale” della Sezione  di Senologia della SIRM; Milano ( 5 crediti formativi ECM)</li>
+<li>131) 2007, Convegno “ Neuroradiology at San Raffaele , an anniversari, 20 years of progress for the future;Milano (4 crediti formativi E.C.M).</li>
+<li>130) 2006, Corso di aggiornamento “ La radiologia pediatrica  per il radiologo generale”; Como ( 4 crediti formativi E.C.M.)</li>
+<li>129) 42° Congresso Nazionale SIRM, Milano ( 10 crediti formativi E.C.M.)</li>
+<li>128) 2006, Corso di formazione obbligatorio in materia di radioprotezione dalle radiazioni per il Personale Medico-Chirurgico addetto all'esercizio professionale della Radiodiagnostica con superamento favorevole da parte della Commissione esaminatrice; Azienda Ospedaliera della Regione Lombardia -  Varese (20 crediti formativi E.C.M.)</li>
+<li>127) 2005, Convegno Nazionale della Sezione di Risonanza Magnetica della SIRM; Novara ( 10 crediti formativi E.C.M.)</li>
+<li>126) 2004, Corso di aggiornamento " L'imaging artroRM della spalla " ( 8 crediti formativi) ; Novara </li>
+<li>125) 2004, Corso di aggiornamento " L'imaging della spalla " due crediti formativi); Pavia</li>
+<li>124) 2004, Corso di aggiornamento    “ Diagnosi precoce e nuove strategie di trattamento del cancro del polmone “; (2 crediti formativi) Varese</li>
+<li>123) 2004, Convegno “ Libertà professionale: tra doveri  e diritti del paziente e del medico “ ( 2 crediti formativi); Verbania</li>
+<li>122) 2004, 41° Congresso Nazionale SIRM( 20 crediti formativi) ; Palermo</li>
+<li>121) 2003, 4° Convegno CRIO “ I Tumori Ossei “ ( 4 crediti formativi) ; Milano</li>
+<li>120) 2003, 4° Congresso Nazionale Società Italiana Terapia con Onde d’Urto, (8 crediti formativi E.C.M.); Bari.</li>
+<li>119) 2003, Corso di Informatica intermedio-superiore della S.I.R.M., ( 7 crediti formativi ECM); Milano.</li>
+<li>118) 2003, Workshop teorico-pratico “TC multistrato: quesiti clinici e risposte diagnostiche( 6 crediti formativi ECM); Castellanza (Va)</li>
+<li>117) 2003, Corso di Informatica di base-iniziale della S.I.R.M., ( 8 crediti formativi ECM); Milano.</li>
+<li>116) 2003, corsi di aggiornamento: Il ginocchio, imaging, artroscopia e chirurgia, terapia riabilitativa ( 2 crediti formativi ECM); Fondazione Salvatore Maugeri, Pavia</li>
+<li>115) 2003, Corso sulle applicazioni di risonanza magnetica in campo ortopedico (2 crediti formativi ECM) Istituto Clinico Mater Domini,Castellanza (Va)</li>
+<li>114) 2003, Corso sulle applicazioni di risonanza magnetica in campo neuroradiologico (2 crediti formativi ECM) Istituto Clinico Mater Domini, Castellanza (Va)</li>
+<li>113) 2003, Corso sulle applicazioni di risonanza magnetica in campo vascolare(2 crediti formativi ECM) Istituto Clinico Mater Domini, Castellanza (Va)</li>
+<li>112) 2002, Incontro “ Parliamo di instabilità gleno-omerale” (3 crediti formativi E.C.M.);Istituto Clinico Mater Domini. Castellanza (Va).</li>
+<li>111) 2002, 1° Giornata  di Aggiornamento in Senologia ( 4 crediti formativi E.C.M.); Salsomaggiore T. (PR). </li>
+<li>110) 2002, Corso: “Gourmet Body Imaging: Volumetric CT and MR Application” (7 crediti formativi E.C.M.); Milano.</li>
+<li>109) 2002, Corso Avanzato Ecografia Color Doppler; XIV Congresso Nazionale SIUMB ( 5 crediti formativi E.C.M.), Abano Terme (Pd).</li>
+<li>108) 2002,40° Congresso Nazionale SIRM; Rimini.</li>
+<li>107) 2002, Convegno " Approccio multidisciplinare nelle lesioni non palpabili della mammella: ruolo della microistologia"; 9° incontro regionale Società Italiana di Chirurgia Oncologica.Castellanza (Va)</li>
+<li>106) 2002, Corso di Risonanza Magnetica della colonna vertebrale; Parma.</li>
+<li>105) 2001, Corso di Management Sanitario; Isituto Clinico Mater Domini, Castellanza (Va).</li>
+<li>104) 2001,Corso di Risonanza Magnetica Body e Osteoarticolare; Università degli studi dell'Aquila.</li>
+<li>103) 2001,Incontro di aggiornamento continuativo in radiologia: Senologia; Azienda Ospedaliera della Regione Lombardia S. Anna di Como.</li>
+<li>102) 2001, Incontro di aggiornamento continuativo in radiologia in qualità di relatore:Radiologia osteoarticolare; Azienda Ospedaliera della Regione Lombardia S.Anna di Como.</li>
+<li>101) 2001, Incontro di aggiornamento continuativo in radiologia: Radiologia toracica; Azienda Ospedaliera della Regione Lombardia S. Anna di Como.</li>
+<li>100) 2000, Convegno " Attualità diagnostiche e terapeutiche nella patologia neoplastica del fegato "; Azienda Ospedaliera della Regione Lombardia S. Anna di Como.</li>
+<li>99) 2000, Corso di Eco Color Doppler; Istituto di Scienze Radiologiche dell' Università degli Studi di Parma</li>
+<li>98) 2000, Corso residenziale avanzato della sezione di Radiologia del Capo e del Collo della S.I.R.M " Imaging del cavo orale e dell'orofaringe"; Cattedra di Radiologia dell'Università degli Studi di Brescia</li>
+<li>97) 2000, Docente di due corsi del Laboratorio di Radiologia " Guida ragionata alla refertazione: TC e RM dell'ernia del disco"  al 39° Congresso Nazionale della Società Italiana di Radiologia Medica; Milano.  </li>
+<li>96) 2000, 4° Corso teorico-pratico degli Incontri Genovesi di Radiologia Muscoloscheletrica; </li>
+<li>S. Margherita Ligure. </li>
+<li>95) 2000, 1° Congresso Nazionale della Società Italiana di Terapia con le Onde d' Urto; Salsomaggiore Terme.</li>
+<li>94) 2000, Corso di Aggiornamento teorico-pratico in diagnostica per immagini presso</li>
+<li> l' Istituto Ortopedico Galeazzi, Milano.</li>
+<li>93) 1999, Corso di Aggiornamento Risonanza Magnetica del Corpo; Istituto Scientifico Ospedale S. Raffaele in Milano.</li>
+<li>92) 1999, Relatore al Convegno Nazionale della Sezione di Studio Muscolo-Scheletrica della SIRM, Torino.</li>
+<li>91) 1999, Convegno di Diagnostica per Immagini in Radiologia Toracica; Como.</li>
+<li>90) 1999, Convegno Update in Musculoskeletal Radiology; Brescia.</li>
+<li>89) 1999, Corso di formazione obbligatorio in materia di radioprotezione dalle radiazioni per il Personale Medico-Chirurgico addetto all'esercizio professionale della Radiodiagnostica con superamento favorevole da parte della Commissione esaminatrice; Azienda Ospedaliera della Regione Lombardia - Ospedale S. Anna - Como.</li>
+<li>88) 1999, Incontro di Senologia; Como.</li>
+<li>87) 1999, V° Corso di aggiornamento tecnico-scientifico sulla patologia muscolo-scheletrica; Sestriere.</li>
+<li>86) 1999, Corso Base di Risonanza Magnetica; Modena.</li>
+<li>85) 1998, Incontri scientifici settimanali  di casistica clinico-radiologica dal mese di settembre al mese di dicembre secondo art. 33 del contratto di lavoro; Azienda Ospedaliera S.Anna, Dipartimento per Immagini, Como.  </li>
+<li>84) 1998, Incontro-dibattito " Consenso informato del paziente e responsabilità penale nella professione medica ".  Azienda Ospedaliera S. Anna, Como.</li>
+<li>83) 1998, Corso itinerante delle sezioni SIRM di Radiologia Muscoloscheletrica e di Diagnostica per Immagini in Medicina dello Sport "I tumori delle parti molli - La caviglia"; Torino.</li>
+<li>82) 1998, Incontro-dibattito " T.C. Volumetrica " Azienda Ospedaliera S. Anna di Como.</li>
+<li>81) 1998, Corso di addestramento residenziale in Eco-color-doppler presso l ' Istituto di radiologia dell'Università "La Sapienza" di Roma.</li>
+<li>80) 1998, Conseguimento del Diploma di partecipazione con profitto dei corsi di aggiornamento professionale in diagnostica integrata dell'apparato muscoloscheletrico presso l'Università dell'Aquila.</li>
+<li>79) 1998, Corso residenziale di aggiornamento in diagnostica integrata dell'apparato muscoloscheletrico "Anca, polso e gomito"; L'Aquila.</li>
+<li>78) 1998, 2° Corso teorico-pratico " Le lesioni elementari dell'osso: osteolisi; Genova.</li>
+<li>77) 1998, Incontro scientifico "Le lesioni dei legamenti crociati"; Gruppo Italiano dell'associazione degli Ortopedici di lingua francofona. Erba(Co).</li>
+<li>76) 1998, 2° Corso avanzato di Radiologia Muscoloscheletrica; San Giovanni Rotondo.</li>
+<li>75) 1998, Incontro al diafanoscopio "L'appendicopatia e le sue complicanze", Como.</li>
+<li>74) 1998, Relatore di comunicazione al 38° Congresso nazionale S.I.R.M., Milano.</li>
+<li>73) 1998, Relatore di comunicazione al VI Congresso Nazionale del Club Italiano di Oncologia del Sistema Muscoloscheletrico; Brescia.</li>
+<li>72) 1998, Corso Superiore di Perfezionamento in Ecografia Ginecologica e Medicina Perinatale di 2° livello presso il Centro ARTEMISIA, Roma.</li>
+<li>71) 1997, Corso di aggiornamento professionale obbligatorio " Rischi da radiazioni ionizzanti " Azienda Ospedaliera della Regione Lombardia  S. Anna di  Como.</li>
+<li>70) 1997, Relatore di comunicazione " The use of ultrasound in the study of anterior knee pain after tibial nailing " al 4th Annual Meeting of the European Society of Musculoskeletal Radiology; Venezia.</li>
+<li>69) 1997, Simposio italo-svizzero sulle lesioni della caviglia e del piede; Lugano (CH).</li>
+<li>68) 1997, Seminario multidisciplinare "Tromboembolia polmonare"; Como.</li>
+<li>67) 1997, Secondo corso di full immersion osteoarticolare; Brescia.</li>
+<li>66) 1997, Relatore di Comunicazione al Congresso Nazionale delle sezioni S.I.R.M. di Radiologia Scheletrica e di Diagnostica per Immagini in Medicina dello Sport; Bari. </li>
+<li>65) 1996, Relatore di comunicazione " Analisi radiografiche per i resti umani provenienti da scavi archeologici " nel 1° corso di Osteologia organizzato dai Musei Civici di Como.</li>
+<li>64) 1996, 2° Congresso Nazionale del  G.I.A.O.F. ( Gruppo Italiano di Antropologia e Odontostomatologia Forense); Gubbio.</li>
+<li>63) 1996, 3° Corso residenziale di diagnostica integrata dell'apparato locomotore " La caviglia e il piede"; L'Aquila.</li>
+<li>62) 1996, 2° riunione gruppo italiano Associazione Ortopedici di lingua francofona (A.O.L.F.): La patologia degenerativa della spalla; Erba (Co).   </li>
+<li>61) 1996, Convegno delle riunioni lombarde di radiologia; Milano.</li>
+<li>60) 1996, 37° Congresso Nazionale S.I.R.M.; Milano. </li>
+<li>59) 1996, Corso di aggiornamento "Patologia tiroidea benigna "; Como.</li>
+<li>58) 1996, Relatore di comunicazione al corso di aggiornamento " Le infezioni ossee e articolari "; Como.</li>
+<li>57) 1995, IV°corso-convegno " Progressi nella risonanza magnetica "; Pavia.</li>
+<li>56) 1995, Convegno nazionale Sezione di Radiologia Scheletrica S.I.R.M.; Genova.</li>
+<li>55) 1995, 2° Corso residenziale di diagnostica integrata dell'apparato locomotore "La spalla "; L'Aquila.</li>
+<li>54) 1995, Convegno di Full Immersion Articolare; Milano.</li>
+<li>53) 1995, Corso prepedeutico e di aggiornamento " La radiologia della regione rino-sinusale; Gardone Riviera (Bs).</li>
+<li>52) 1995, incontr radiologico al diafanoscopio "Radiourologia pediatrica "; Como.</li>
+<li>51) 1994,Incontro radiologico al diafanoscopio " Diagnostica integrata della patologia focale epatica"; Como.</li>
+<li>50) 1994, Relatore all' incontro radiologico al diafanoscopio " I tumori ossei "; Como.</li>
+<li>49) 1994, Incontro radiologico al diafanoscopio " Le flogosi delle vie urinarie"; Como.</li>
+<li>48) 1994, Incontro radiologico al diafanoscopio " Senologia: immagini che giungono alla biopsia"; Como.</li>
+<li>47) 1994, 1° Corso residenziale di diagnostica integrata dell'apparato locomotore " Il ginocchio"; L'Aquila.</li>
+<li>46) 1994, Incontri pediatrici; Como.</li>
+<li>45) 1994, Corso "Incontro e confronto con il tecnico sul tomografo a risonanza magnetica dedicato Artroscan"; Genova.</li>
+<li>44) 1994, Congresso Nazionale S.I.R.M.; Milano.</li>
+<li>43) 1994, Corso residenziale di risonanza magnetica muscolo-scheletrica; Trieste.</li>
+<li>42) 1993-94, Relatore agli incontri monotematici al diafanoscopio: " La radiologia in Antropologia"; Como.</li>
+<li>41) 1994, Relatore agli incontri monotematici al diafanoscopio: " I tumori dell'osso "; Como.</li>
+<li>40) 1993-1995, Incontri radiologici monotematici al diafanoscopio; Como.</li>
+<li>39) 1993, Congresso Nazionale Sezione di Radiologia Scheletrica S.I.R.M.; Modena.</li>
+<li>38) 1993, Relatore di una comunicazione al XXIV Congresso Nazionale Ortopedici-Traumatologi Ospedalieri Italiani; Como.</li>
+<li>37) 1993, Convegno di aggiornamento in radiologia muscolo-scheletrica; Gardone Riviera (Bs).</li>
+<li>36) 1993, Relatore al corso di aggiornamento trans-frontaliero Ticino (CH)-Varese-Como per tecnici sanitari di radiologia medica; Lugano (CH).</li>
+<li>35) 1993, Convegno nazionale di radio-urologia oncologica; Como.</li>
+<li>34) 1993, Corso internazionale di radiologia scheletrica; Davos (CH).</li>
+<li>33) 1992, Relatore di due comunicazioni al XXXV Congresso Nazionale S.I.R.M.; Genova.</li>
+<li>32) 1992, Corso residenziale di risonanza magnetica in neuroradiologia; Istituto S. Raffaele - Milano.</li>
+<li>31) 1992, Riunione di aggiornamento radiologico a Lanzo d'Intelvi (Co).</li>
+<li>30) 1992, XIX corso annuale International Skeletal Society ; Stoccolma.</li>
+<li>29) 1992, Riunione del Gruppo regionale Lombardia S.I.R.M.: "Gli ascessi dal punto di vista radiologico-interventistico"; Milano. </li>
+<li>28) 1991, Periodo di quattro mesi di aggiornamento in Risonanza Magnetica presso Istituto di Radiologia dell'Università di Trieste.</li>
+<li>27) 1991, Riunione gruppo regionale S.I.R.M. del Friuli. Spilimbergo.</li>
+<li>26) 1991, Convegno "Attualità in senologia". Como.</li>
+<li>25) 1991, Seminario di casistica " Immagini muscoloscheletriche "; Treviso.</li>
+<li>24) 1991, Giornata internazionale: " Strategie nel trattamento delle lesioni acute e croniche dei legamenti del ginocchio. Erba (Co).</li>
+<li>23) 1991, Corso di mammografia e diagnostica senologica ; Scuola italiana di Senologia, Orta S. Giulio.</li>
+<li>22) 1991, 3° corso propedeutico di tomografia computerizzata; Firenze.</li>
+<li>21) 1990, Corso di neuroradiologia; Verona.</li>
+<li>20) 1990, Convegno " Attualità in senologia "; Brescia.</li>
+<li>19) 1990, Relatore di comunicazione  al Congresso Nazionale della Sezione di Senologia - S.I.R.M.;Catania.</li>
+<li>18) 1990, Corso di tomografia assiale computerizzata in O.R.L.; Trento.</li>
+<li>16) 1990,Aggiornamento post-universitario in radiologia " Ouverture anatomo-clinica all'imaging endo cra_ nico"; Verona.</li>
+<li>16) 1990, Convegno " Il carcinoma pre-clinico della mammella "; Gualtieri (RE).</li>
+<li>15) 1990, 2° settimana di aggiornamento della Società di Chirurgia italiana; Milano.</li>
+<li>14) 1989, Riunione di aggiornamento radiologico a Lanzo D'Intelvi.</li>
+<li>13) 1989, Corso di aggiornamento in radiologia toracica; Milano.</li>
+<li>12) 1989, Corso-convegno " La risonanza magnetica nello studio del cuore "; Pavia.</li>
+<li>11) 1989, Corso residenziale di radiologia dello scheletro; Roma.</li>
+<li>10) 1989, IV Corso di aggiornamento e giornate bresciane di radiologia toracica;Brescia.                               </li>
+<li>9) 1988, Convegno " I tumori ossei " ; Milano.</li>
+<li>8) 1988, XXXIII Congresso Nazionale S.I.R.M. -Roma.</li>
+<li>7) 1988, Riunione di aggiornamento radiologico a Lanzo D'Intelvi.</li>
+<li>6) 1987, XI Congresso Nazionale della Sezione di Radiologia Toracica- S.I.R.M. Venezia.</li>
+<li>5) 1987, Riunione di aggiornamento radiologico a Lanzo d'Intelvi.</li>
+<li>4) 1987, Corso " Imaging della colonna". Gennaio - Maggio.</li>
+<li>3) 1986, Riunione di aggiornamento radiologico a Lanzo d'Intelvi.</li>
+<li>2) 1986, XXXII Congresso Nazionale S.I.R.M..</li>
+<li>1) 1984, Diploma in Ecografia internistica della S.I.R.M. - Pavia.</li>
+  </ul>
+</div>
 
 
+          </div>
+          
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">ELENCO PUBBLICAZIONI</h3>
+            <div class="resume-item">
+              <ul>
+                <li><strong>32) 2003,</strong> Binda M., Falchi A, Crespi F, Iseni F: “La terapia radiale ad onde d’urto nelle fibrosi muscolari postraumatiche in medicina sportiva“ Abstracts del IV° Congresso Nazionale Società Italiana Terapia Con Onde d’Urto.</li>
+                <li><strong>31) 2001,</strong> Binda M, Croce K, Belli L: "Valutazione dinamica della spalla con sistema aperto". Abstracts del Convegno Nazionale della Sezione di Studio Muscolo Scheletrica della SIRM.</li>
+                <li><strong>30) 2000,</strong> Lovisetti G, Lovisetti L, Binda M: "Miglioramento del quadro angiografico conseguente ad osteogenesi distrazionale in ischemia cronica della gamba. Presentazione di un caso clinico. Lo Scalpello 2000; 14: 13-16.</li>
+                <li><strong>29) 2000,</strong> Gozzi G, Morresi A, Binda M, Ganzetti A: "Ecografia della mammella" (videoatlante di casistica ragionata); Athena, Modena.</li>
+                <li><strong>28) 1999,</strong> Binda M, Cattaneo C, Bogoni e Coll: "Identification of human skeletal remains: forensic radiology vs DNA". La Radiologia Medica 97: 409 - 411. Edizione Minerva Medica - Torino.</li>
+                <li><strong>27) 1998,</strong> Binda M, Cattaneo C, Molendini LO e Coll: "Determination de L'age par examen radiologique de la main gauche pour verifier l'imputabilite d'un sujet: comparison entre une population italienne et marocaine". Atti 42° Congrés International de Medicine Légale et de Mèdicine Sociale de Langue Française.</li>
+                <li><strong>26) 1998,</strong> D'Amico S, Zampolli M, Lietti D, Regazzoni M, Binda M e Coll: "Protocollo diagnostico ambulatoriale nel trattamento della sinovite transitoria dell'anca". Giornale Italiano di Ortopedia e Traumatologia; Vol. XXIV, fasc. 2.</li>
+                <li><strong>25) 1998,</strong> Sala F, Binda M, Lovisetti G: "La sindrome gonalgica anteriore dopo inchiodamento endomidollare: indagine ecografica e radiologica". Chirurgia Organi Movimento, LXXXIII, 271-27.</li>
+                <li><strong>24) 1998,</strong> Belloni C, Baratelli G, Beretta AM, Binda M e Coll: "Diagnosi del tumore della mammella". In: Gola G., Sannino A. "Linee guida sulla prevenzione; diagnosi e cura del tumore della mammella". Azienda Sanitaria Locale della Provincia di Como.</li>
+                <li><strong>23) 1998,</strong> Binda M, Sala F, Gozzi G, Guicciardi E: "Utilità dell'ecografia nello studio della gonalgia anteriore dopo osteosintesi endomidollare tibiale". Bollettino dell'Ordine dei Medici Chirurghi e degli Odontoiatri della Provincia di Como.</li>
+                <li><strong>22) 1998,</strong> Binda M, Della Vigna P, Gozzi G e Coll: "Valutazione radiografica delle fratture distali radiali dopo osteosintesi funzionale". Atti del 38° Congresso Nazionale S.I.R.M.; Milano.</li>
+                <li><strong>21) 1998,</strong> Gozzi G, Morresi A, Binda M: "Diagnostica per immagini". In: Gozzi G. "Protocollo diagnostico e terapeutico per le lesioni mammarie maligne". Bollettino dell'Ordine dei Medici Chirurghi e degli Odontoiatri della Provincia di Como.</li>
+                <li><strong>20) 1998,</strong> Sala F, Lovisetti G, Lovisetti L, Binda M: "Insorgenza di osteosarcoma a rapida evoluzione letale in due fratelli". Atti VI Congresso Nazionale del Club Italiano Oncologia del Sistema Muscoloscheletrico. -Brescia.</li>
+                <li><strong>19) 1997,</strong> Binda M, Bonzanini B, Campi R e Coll: "Lesioni mammarie sottoposte ad agoaspirazione. Indagine della Sezione di Senologia della SIRM (Gruppo Lombardo)". La Radiologia Medica 94 : 447-453. Edizione Minerva medica - Torino.</li>
+                <li><strong>18) 1997,</strong> Cassi M, Binda M: "Le dermalgie riflesse anteriori addominali di Jarricot: semeiotica manuale e strumentale ecografica". Bollettino dell'Ordine Provinciale dei Medici Chirurghi e degli Odontoiatri di Como.</li>
+                <li><strong>17) 1997,</strong> Binda M, Martini P: "Confronto tra Tomografia Computerizzata e valutazione artroscopica nella diagnosi delle lesioni del ginocchio". Arch. Ortop. Reumatol. Vol. 11 - Fasc.1°.</li>
+                <li><strong>16) 1997,</strong> Binda M, Lovisetti G: "Lesione della cuffia tendinea dei rotatori quale complicanza di lussazione scapolo-omerale: studio clinico ed ecografico". Atti Congresso Nazionale sezioni S.I.R.M. di Radiologia Scheletrica e Diagnostica per Immagini in Medicina dello Sport - Bari.</li>
+                <li><strong>15) 1996,</strong> Cattaneo C, Binda M, Ravedoni C, Gozzi G: "Two cases of osseus syphilis in Roman and Mediaeval skeletons". Sciences and Technology for Cultural Heritage; Journal of the "Comitato Nazionale per la Scienza e la Tecnologia dei Beni Culturali."</li>
+                <li><strong>14) 1996,</strong> Gozzi G, Morresi A, Binda M: "Metodologia d'esame e valutazione critica del prodotto". Atti Seminario Multisciplinare di Mammografia; Edizioni New Press - Como.</li>
+                <li><strong>13) 1996,</strong> Gozzi G, Binda M, Dal Piaz G: "La mammella normale". Collana monotematica di Ecografia: Mammella. G. Gnocchi Editore.</li>
+                <li><strong>12) 1996,</strong> Binda M, Gozzi G: "Osteoartropatia psoriasica". Bollettino dell'Ordine Provinciale dei Medici Chirurghi e degli Odontoiatri di Como.</li>
+                <li><strong>11) 1996,</strong> Gozzi G, Morresi A, Binda M: "Ottimizzazione del prelievo stereotassico". Atti 37° Congresso Nazionale S.I.R.M., Milano.</li>
+                <li><strong>10) 1996,</strong> Gozzi G, Binda M: "Rocche petrose". Trattato Italiano di Tomografia Computerizzata. Vol.1; Guido Gnocchi Editore.</li>
+                <li><strong>9) 1995,</strong> Gozzi G, Morresi A, Binda M: "Lesioni mammarie non a rischio: papillomi, ectasia duttale, flogosi, ginecomastia; ruolo dell'ecografia. Atti Convegno Nazionale di Senologia - S.I.R.M. Napoli.</li>
+                <li><strong>8) 1995,</strong> Gozzi G, Morresi A, Binda M: "Sorveglianza oncologica in corso di trattamento ormonale sostitutivo. Mammella: il ruolo centrale dell'imaging". Atti LXXI Congresso Società Italiana di Ginecologia ed Ostetricia, XXXVI Congresso Associazione Ostetrici-Ginecologici Ospedalieri Italiani, III Congresso Associazione Ginecologi Universitari Italiani; Palermo.</li>
+                <li><strong>7) 1994,</strong> Cattaneo C, Binda M: "La radiologia in antropologia". Bollettino Ospedale di Varese, XXIII, 193-197.</li>
+                <li><strong>6) 1994,</strong> Binda M, Cattaneo C, Cecconi P, Gozzi G: "Studio radiologico della mummia". Catalogo della Collezione Egizia del Civico Museo Archeologico di Como.</li>
+                <li><strong>5) 1994,</strong> D'amico S, Picci F, Binda M: "Coxartrosi rapidamente distruttiva". Minerva Ortopedica Traumatologica; 45:83-7.</li>
+                <li><strong>4) 1993,</strong> D'Amico S, Picci f, Zottola V, Binda M: "Osteoatrite rapidamente distruttiva". Atti del XXIV Congresso Nazionale Ortopedici-Traumatologi Ospedalieri. Como.</li>
+                <li><strong>3) 1992,</strong> Cressa C, Gozzi G, Marcorig D, Tonutti M, Binda M: "Contributo diagnostico dell'ingrandimento radiografico diretto e dell'ecografia in Senologia". Atti del XXXV Congresso Nazionale S.I.R.M. Genova.</li>
+                <li><strong>2) 1992,</strong> Rossini G, Ferzi A, Binda M: "Follow-up di pazienti sottoposte a Q.U.A.R.T.: comparazione tra esame clinico, mammografico, ecografico e RMN". Atti del XXXV Congresso Nazionale S.I.R.M. Genova.</li>
+                <li><strong>1) 1990,</strong> Gozzi G, Cressa C, Morresi A, Zuiani C, Binda M: "Valore diagnostico della mammografia e dell'ecografia in pazienti sintomatiche e asintomatiche". Atti del Congresso Nazionale di Senologia - S.I.R.M. Catania.</li>
+              </ul>
+              
+            </div>
+          </div>
+          
+        </div>
 
+      </div>
+    </section><!-- End Resume Section -->
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mauro Binda</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://github.com/GianlucaP17">GianlucaP17</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
